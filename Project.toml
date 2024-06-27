@@ -1,0 +1,7 @@
+name = "TimerNLPModels"
+uuid = "dcfb2d1f-5e2a-5d7d-93fa-0656abb5c718"
+authors = ["tmigot <tangi.migot@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1.6"
