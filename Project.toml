@@ -3,5 +3,10 @@ uuid = "dcfb2d1f-5e2a-5d7d-93fa-0656abb5c718"
 authors = ["tmigot <tangi.migot@gmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+NLPModels = "a4795742-8479-5a88-8948-cc11e1c8c1a6"
+NLPModelsTest = "7998695d-6960-4d3a-85c4-e1bceb8cd856"
+TimerOutputs = "a759f4b9-e2f1-59dc-863e-4aeb61b1ea8f"
+
 [compat]
 julia = "1.6"

@@ -1,0 +1,12 @@
+# Changes here will be overwritten by Copier
+AnswerStrategy: recommended
+AuthorEmail: tangi.migot@gmail.com
+AuthorName: tmigot
+Indentation: 2
+JuliaMinVersion: '1.6'
+License: MIT
+PackageName: TimerNLPModels
+PackageOwner: tmigot
+PackageUUID: dcfb2d1f-5e2a-5d7d-93fa-0656abb5c718
+_commit: v0.6.1
+_src_path: https://github.com/abelsiqueira/COPIERTemplate.jl

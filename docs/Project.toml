@@ -5,6 +5,7 @@
 [deps]
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 LiveServer = "16fef848-5104-11e9-1b77-fb7a48bbb589"
+NLPModelsIpopt = "f4238b75-b362-5c4c-b852-0801c9a21d71"
 TimerNLPModels = "dcfb2d1f-5e2a-5d7d-93fa-0656abb5c718"
 
 [compat]

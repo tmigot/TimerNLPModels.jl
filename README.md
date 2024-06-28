@@ -12,6 +12,8 @@
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 [![All Contributors](https://img.shields.io/github/all-contributors/tmigot/TimerNLPModels.jl?labelColor=5e1ec7&color=c0ffee&style=flat-square))](#contributors)
 
+This package relies on [TimerOutputs.jl](https://github.com/KristofferC/TimerOutputs.jl) for timing every method in the [NLPModel API](https://github.com/JuliaSmoothOptimizers/NLPModels.jl).
+
 ## How to Cite
 
 If you use TimerNLPModels.jl in your work, please cite using the reference given in [CITATION.cff](https://github.com/tmigot/TimerNLPModels.jl/blob/main/CITATION.cff).
