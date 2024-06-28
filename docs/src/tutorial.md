@@ -1,4 +1,4 @@
-# Nonlinear optimization
+## Nonlinear optimization
 
 ```@example ex1
 using NLPModelsIpopt, ADNLPModels, TimerNLPModels
@@ -10,7 +10,7 @@ stats = ipopt(nlp, print_level = 0)
 get_timer(nlp)
 ```
 
-# Nonlinear least squares
+## Nonlinear least squares
 
 ```@example ex2
 using NLPModelsIpopt, ADNLPModels, TimerNLPModels
