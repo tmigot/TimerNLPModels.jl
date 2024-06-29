@@ -9,4 +9,5 @@ NLPModelsTest = "7998695d-6960-4d3a-85c4-e1bceb8cd856"
 TimerOutputs = "a759f4b9-e2f1-59dc-863e-4aeb61b1ea8f"
 
 [compat]
+NLPModels = "0.21"
 julia = "1.6"
