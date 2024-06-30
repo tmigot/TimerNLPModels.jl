@@ -4,25 +4,25 @@ nlp = TimerNLPModel(ADNLPModel(x -&gt; sum(x.^2), ones(3)))
 stats = ipopt(nlp, print_level = 0)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">&quot;Execution stats: first-order stationary&quot;</code></pre><pre><code class="language-julia hljs">get_timer(nlp)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi"><span class="sgr1"> ────────────────────────────────────────────────────────────────────────────</span>
 <span class="sgr1">                           </span>         Time                    Allocations      
                            ───────────────────────   ────────────────────────
-     Tot / % measured:          3.64s /  55.3%            559MiB /  42.8%    
+     Tot / % measured:          3.63s /  54.9%            559MiB /  42.8%    
 
  Section           ncalls     time    %tot     avg     alloc    %tot      avg
  ────────────────────────────────────────────────────────────────────────────
- hess_coord!            1    1.29s   64.2%   1.29s    135MiB   56.5%   135MiB
- grad!                  3    601ms   29.8%   200ms   94.3MiB   39.4%  31.4MiB
+ hess_coord!            1    1.29s   64.8%   1.29s    135MiB   56.5%   135MiB
+ grad!                  3    583ms   29.2%   194ms   94.2MiB   39.4%  31.4MiB
  obj                    2   76.0ms    3.8%  38.0ms   8.33MiB    3.5%  4.16MiB
- hess_structure!        1   44.2ms    2.2%  44.2ms   1.41MiB    0.6%  1.41MiB
+ hess_structure!        1   43.1ms    2.2%  43.1ms   1.41MiB    0.6%  1.41MiB
 <span class="sgr1"> ────────────────────────────────────────────────────────────────────────────</span></code></pre><h2 id="Nonlinear-least-squares"><a class="docs-heading-anchor" href="#Nonlinear-least-squares">Nonlinear least squares</a><a id="Nonlinear-least-squares-1"></a><a class="docs-heading-anchor-permalink" href="#Nonlinear-least-squares" title="Permalink"></a></h2><pre><code class="language-julia hljs">using NLPModelsIpopt, ADNLPModels, TimerNLPModels
 nls = TimerNLPModel(ADNLSModel(x -&gt; x, ones(3), 3))
 stats = ipopt(nls, print_level = 0)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">&quot;Execution stats: first-order stationary&quot;</code></pre><pre><code class="language-julia hljs">get_timer(nls)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi"><span class="sgr1"> ────────────────────────────────────────────────────────────────────────────</span>
 <span class="sgr1">                           </span>         Time                    Allocations      
                            ───────────────────────   ────────────────────────
-     Tot / % measured:          1.99s /  71.4%            226MiB /  68.2%    
+     Tot / % measured:          1.93s /  70.9%            226MiB /  68.2%    
 
  Section           ncalls     time    %tot     avg     alloc    %tot      avg
  ────────────────────────────────────────────────────────────────────────────
- hess_coord!            1    847ms   59.5%   847ms   87.8MiB   57.0%  87.8MiB
- grad!                  3    544ms   38.2%   181ms   65.0MiB   42.2%  21.7MiB
- hess_structure!        1   32.4ms    2.3%  32.4ms   1.34MiB    0.9%  1.34MiB
- obj                    2   15.1μs    0.0%  7.55μs      224B    0.0%     112B
-<span class="sgr1"> ────────────────────────────────────────────────────────────────────────────</span></code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../">« Home</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="auto">Automatic (OS)</option><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="catppuccin-latte">catppuccin-latte</option><option value="catppuccin-frappe">catppuccin-frappe</option><option value="catppuccin-macchiato">catppuccin-macchiato</option><option value="catppuccin-mocha">catppuccin-mocha</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.5.0 on <span class="colophon-date" title="Friday 28 June 2024 21:36">Friday 28 June 2024</span>. Using Julia version 1.10.4.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
+ hess_coord!            1    826ms   60.4%   826ms   87.9MiB   57.0%  87.9MiB
+ grad!                  3    509ms   37.2%   170ms   65.0MiB   42.1%  21.7MiB
+ hess_structure!        1   32.1ms    2.3%  32.1ms   1.34MiB    0.9%  1.34MiB
+ obj                    2   14.0μs    0.0%  6.99μs      224B    0.0%     112B
+<span class="sgr1"> ────────────────────────────────────────────────────────────────────────────</span></code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../">« Home</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="auto">Automatic (OS)</option><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="catppuccin-latte">catppuccin-latte</option><option value="catppuccin-frappe">catppuccin-frappe</option><option value="catppuccin-macchiato">catppuccin-macchiato</option><option value="catppuccin-mocha">catppuccin-mocha</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.5.0 on <span class="colophon-date" title="Sunday 30 June 2024 16:41">Sunday 30 June 2024</span>. Using Julia version 1.10.4.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
