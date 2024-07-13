@@ -56,7 +56,11 @@ for meth in (:ghjvprod!,)
 end
 for meth in (:hess, :hess_op, :hess_coord)
   @eval begin
-    function NLPModels.$meth(nlp::TimerModel, x::AbstractVector{T}; obj_weight::T = one(T)) where {T}
+    function NLPModels.$meth(
+      nlp::TimerModel,
+      x::AbstractVector{T};
+      obj_weight::T = one(T),
+    ) where {T}
       @timeit nlp.timer "$($meth)" $meth(get_nlp(nlp), x; obj_weight = obj_weight)
     end
   end
@@ -164,12 +168,7 @@ for meth in (:jth_hprod!,)
     end
   end
 end
-for meth in (
-  :jac_structure,
-  :jac_lin_structure,
-  :jac_nln_structure,
-  :hess_structure,
-)
+for meth in (:jac_structure, :jac_lin_structure, :jac_nln_structure, :hess_structure)
   @eval begin
     function NLPModels.$meth(nlp::TimerModel)
       @timeit nlp.timer "$($meth)" $meth(get_nlp(nlp))

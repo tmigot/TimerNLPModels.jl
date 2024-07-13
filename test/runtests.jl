@@ -13,6 +13,6 @@ end
   @testset "NLS: $pb" for pb in NLPModelsTest.nls_problems
     exclude = pb == "LLS" ? [hess_coord, hess] : []
     nls = TimerNLSModel(eval(Meta.parse(pb))())
-    consistent_nlss([nls, nls], exclude = exclude, linear_api = true)
+    consistent_nlss([nls, nls]; exclude = exclude, linear_api = true)
   end
 end
