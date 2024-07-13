@@ -30,7 +30,7 @@ makedocs(;
     [
       nice_name(file) => file for
       file in readdir(joinpath(@__DIR__, "src")) if file != "index.md" && splitext(file)[2] == ".md"
-    ],
+    ]
   ],
 )
 
