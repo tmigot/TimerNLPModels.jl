@@ -41,4 +41,3 @@ If you want to make contributions of any kind, please first that a look into our
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-

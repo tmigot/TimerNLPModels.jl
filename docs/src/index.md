@@ -25,4 +25,3 @@ Documentation for [TimerNLPModels](https://github.com/tmigot/TimerNLPModels.jl).
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 ```
-
